@@ -1,4 +1,17 @@
 
+def wrongInput(sign):
+
+    options = [ 'a1', 'A1', 'a2', 'A2', 'a3', 'A3',
+                'b1', 'B1', 'b2', 'B2', 'b3', 'B3',
+                'c1', 'C1', 'c2', 'C2', 'c3', 'C3',
+                'q' ]
+    
+    for i in range(len(options)):
+        if sign == options[i]:
+            return 0
+    
+    return 1
+
 def addToField(field, sign, play):
 
     putIn = ' '
