@@ -40,3 +40,4 @@ def printField(field):
         for cols in range(39):
             print(field[rows][cols], end='')
         print()
+    print()
