@@ -14,6 +14,7 @@ while win == 0:
     play = 0
 
     subprocess.call('clear')
+    subprocess.call('./header.sh')
     drawModule.printField(field)
 
     if player1 == True:
@@ -23,6 +24,7 @@ while win == 0:
             
             while functionsModule.wrongInput(sign) == 1:
                 subprocess.call('clear')
+                subprocess.call('./header.sh')
                 drawModule.printField(field)
                 print(' !!! WRONG COORDINATE, PLEASE TRY AGAIN !!!')
                 print()
@@ -39,6 +41,7 @@ while win == 0:
             
             while functionsModule.wrongInput(sign) == 1:
                 subprocess.call('clear')
+                subprocess.call('./header.sh')
                 drawModule.printField(field)
                 print(' !!! WRONG COORDINATE, PLEASE TRY AGAIN !!!')
                 print()
@@ -60,12 +63,14 @@ while win == 0:
 
     if win == 1:
         subprocess.call('clear')
+        subprocess.call('./header.sh')
         drawModule.printField(field)
         print('PLAYER 1 WIN THE GAME!')
         print()
         break
     elif win == 2:
         subprocess.call('clear')
+        subprocess.call('./header.sh')
         drawModule.printField(field)
         print('PLAYER 2 WIN THE GAME!')
         print()
