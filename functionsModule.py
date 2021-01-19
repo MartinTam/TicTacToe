@@ -1,17 +1,60 @@
 
-def wrongInput(sign):
+# Check wrong inputs
+def wrongInput(field, sign):
 
     options = [ 'a1', 'A1', 'a2', 'A2', 'a3', 'A3',
                 'b1', 'B1', 'b2', 'B2', 'b3', 'B3',
                 'c1', 'C1', 'c2', 'C2', 'c3', 'C3',
                 'q' ]
     
+    flag = 0
+
     for i in range(len(options)):
         if sign == options[i]:
-            return 0
+            flag = 1
+            break
     
+    if flag == 1:
+
+        # First row
+        if sign == 'a1' or sign == 'A1':
+            if field[4][17] == ' ':
+                return 0
+        elif sign == 'a2' or sign == 'A2':
+            if field[4][25] == ' ':
+                return 0
+        elif sign == 'a3' or sign == 'A3':
+            if field[4][33] == ' ':
+                return 0
+        
+        # Second row
+        elif sign == 'b1' or sign == 'B1':
+            if field[7][17] == ' ':
+                return 0
+        elif sign == 'b2' or sign == 'B2':
+            if field[7][25] == ' ':
+                return 0
+        elif sign == 'b3' or sign == 'B3':
+            if field[7][33] == ' ':
+                return 0
+
+        # Third row
+        elif sign == 'c1' or sign == 'C1':
+            if field[10][17] == ' ':
+                return 0
+        elif sign == 'c2' or sign == 'C2':
+            if field[10][25] == ' ':
+                return 0
+        elif sign == 'c3' or sign == 'C3':
+            if field[10][33] == ' ':
+                return 0
+
+    if flag == 1 and sign == 'q':
+        return 0
+
     return 1
 
+# Add sign to field
 def addToField(field, sign, play):
 
     putIn = ' '

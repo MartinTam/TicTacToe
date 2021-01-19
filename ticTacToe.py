@@ -20,9 +20,9 @@ while win == 0:
     if player1 == True:
         sign = input('Player 1: ')
 
-        if functionsModule.wrongInput(sign) == 1:
+        if functionsModule.wrongInput(field, sign) == 1:
             
-            while functionsModule.wrongInput(sign) == 1:
+            while functionsModule.wrongInput(field, sign) == 1:
                 subprocess.call('clear')
                 subprocess.call('./header.sh')
                 drawModule.printField(field)
@@ -37,9 +37,9 @@ while win == 0:
     elif player2 == True:
         sign = input('Player 2: ')
 
-        if functionsModule.wrongInput(sign) == 1:
+        if functionsModule.wrongInput(field, sign) == 1:
             
-            while functionsModule.wrongInput(sign) == 1:
+            while functionsModule.wrongInput(field, sign) == 1:
                 subprocess.call('clear')
                 subprocess.call('./header.sh')
                 drawModule.printField(field)
