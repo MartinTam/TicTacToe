@@ -41,3 +41,6 @@ def printField(field):
             print(field[rows][cols], end='')
         print()
     print()
+    print('-------------------------------------------------------')
+    print('Help: q - Quit the game')
+    print()
