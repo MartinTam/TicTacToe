@@ -1,31 +1,20 @@
+'''
+# Coordinates of tic and tac
+field[4][17] = 'O'
+field[4][25] = 'X'
+field[4][33] = 'O'
 
-def firstRow():
-    for first in range(36):
-        if first < 9:
-            print(' ', end='')
+field[7][17] = 'O'
+field[7][25] = 'X'
+field[7][33] = 'O'
 
-        if first==9:
-            print(' ', end='')
-        if first > 9:
-            print('_', end='')
+field[10][17] = 'O'
+field[10][25] = 'X'
+field[10][33] = 'O'
 
-    print()
+'''
 
-def otherRow():
+import drawModule
 
-    for row in range(3):
-        for col in range(37):
-            if col >= 9 and col%9==0:
-                print('|', end='')
-            elif col>= 9 and row==2:
-                print('_', end='')
-            else:
-                print(' ', end='')
-        print()
-
-firstRow()
-for i in range(3):
-    otherRow()
-print()    
-
-
+field = drawModule.createField()
+drawModule.printField(field)
