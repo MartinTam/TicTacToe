@@ -9,7 +9,7 @@ The figlet command can be used to draw large sized text banners. I used it to pr
 
     sudo apt-get install figlet
 
-Then make sure to make header.sh file executable before you execute the game.
+Then make sure to change the file permission for header.sh before you execute the game.
 
     chmod a+x header.sh
 
