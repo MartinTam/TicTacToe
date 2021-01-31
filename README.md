@@ -18,4 +18,4 @@ Then make sure to set the permission for header.sh to executable before you exec
 
 # License
 
-The code is available under the [MIT](https://github.com/MartinTam/Ctest/blob/master/LICENSE) license.
+The code is available under the [MIT](https://github.com/MartinTam/TicTacToe/blob/main/LICENSE) license.
